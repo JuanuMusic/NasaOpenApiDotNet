@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace NasaOpenApis.Tests.EPIC
 {
     [TestClass]
-    public class EPICTests
+    public class EPIC_Tests
     {
         [TestMethod]
         public async Task EPIC_QueryAllNatural_CountGreaterThanZero()

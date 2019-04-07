@@ -2,16 +2,14 @@
 using NasaOpenApis.EPIC;
 using NasaOpenApis.EPIC.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace NasaOpenApis.Tests.EPIC
 {
     [TestClass]
-    public class EpicMetadataTests
+    public class EPICMetadata_Tests
     {
         [TestMethod]
         public async Task EpicMetadata_GetImageUrlPng_IsValidUrl()
@@ -33,7 +31,7 @@ namespace NasaOpenApis.Tests.EPIC
             // Check if the URL exists.
             HttpClient client = new HttpClient();
             HttpResponseMessage response = await client.GetAsync(imageUrl);
-            Assert.IsTrue(response.IsSuccessStatusCode); 
+            Assert.IsTrue(response.IsSuccessStatusCode);
             #endregion
         }
 
