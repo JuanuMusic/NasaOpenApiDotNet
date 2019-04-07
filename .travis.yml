@@ -2,7 +2,7 @@ language: csharp
 solution: NasaOpenApis.sln
 mono: none
 dist: trusty
-dotnet: 2.1.0
+dotnet: 2.0.0
 script:
  - cd NasaOpenApis.Tests
  - dotnet test
