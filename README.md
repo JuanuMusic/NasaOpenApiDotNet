@@ -8,4 +8,7 @@ An Open Source .NET wrapper to easily consume the Nasa Open Apis.
 Provides information and acces to the daily imagery collected by DSCOVR's Earth Polychromatic Imaging Camera (EPIC) instrument.
 
 ## How to contribute?
-Feel free to fork and push your commits!
+- Make sure that your code is readable
+- Add as much comments as you can
+- Always add Summary documentation to methods and properties 
+- Feel free to fork and push your commits!
