@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NasaOpenApis.Common
+namespace NasaOpenApis.EPIC.Models
 {
     /// <summary>
-    /// Represents an image type to request.
+    /// An enum that represents an image type to request.
     /// </summary>
     public enum ImageType
     {
@@ -14,8 +14,16 @@ namespace NasaOpenApis.Common
         Thumbnail
     }
 
+    /// <summary>
+    /// Extension methos for <see cref="ImageType"/> enum.
+    /// </summary>
     public static class ImageTypeExtensions
     {
+        /// <summary>
+        /// Return the string that represents the image type on the Epic API.
+        /// </summary>
+        /// <param name="pImageType"></param>
+        /// <returns></returns>
         public static string GetString(this ImageType pImageType)
         {
             switch (pImageType)

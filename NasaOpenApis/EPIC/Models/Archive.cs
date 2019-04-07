@@ -5,7 +5,7 @@ using System.Text;
 namespace NasaOpenApis.EPIC.Models
 {
     /// <summary>
-    /// Represents the available archive types.
+    /// An enum that represents the available archive types.
     /// </summary>
     public enum Archive
     {

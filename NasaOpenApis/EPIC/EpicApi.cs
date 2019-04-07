@@ -18,6 +18,11 @@ namespace NasaOpenApis.EPIC
         /// </summary>
         ApiClient _client = null;
 
+        /// <summary>
+        /// Stores the actual API Key.
+        /// </summary>
+        string _apiKey = "DEMO_KEY";
+
         #endregion
 
         #region Public Properties
@@ -30,12 +35,28 @@ namespace NasaOpenApis.EPIC
         
         #endregion
 
+        /// <summary>
+        /// Instantiates the EPIC Api with the default api key.
+        /// </summary>
         public EPICApi()
         {
             // Instantiate the Api Client
             _client = new ApiClient();
         }
-        
+
+        /// <summary>
+        /// Instantiates the EPIC Api with a custom api key.
+        /// </summary>
+        /// <param name="pApiKey"></param>
+        public EPICApi(string pApiKey)
+        {
+            // Instantiate the Api Client
+            _client = new ApiClient();
+
+            // Set the new api key
+            _apiKey = pApiKey;
+        }
+
 
         /// <summary>
         /// Executes the given query against the EPIC APi.
@@ -44,7 +65,8 @@ namespace NasaOpenApis.EPIC
         /// <returns></returns>
         public async Task<EpicMetadata[]> QueryArrayAsync(EpicQuery pQuery)
         {
-            Uri requestUrl = new Uri(BaseUrl, "api/" + pQuery.ToString());
+            // Generate the URI with the API KEY
+            Uri requestUrl = new Uri(BaseUrl, $"api/{pQuery.ToString()}?api_key={_apiKey}");
 
             // Make the request to the api and get the result.
             var result = await _client.Get<EpicMetadata[]>(requestUrl);

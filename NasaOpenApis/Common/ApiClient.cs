@@ -6,17 +6,11 @@ using System.Threading.Tasks;
 
 namespace NasaOpenApis
 {
+    /// <summary>
+    /// A class that handles requests and responses with a Server.
+    /// </summary>
     public class ApiClient
     {
-        /// <summary>
-        /// Stores the actual API Key.
-        /// </summary>
-        string _apiKey = String.Empty;
-
-        /// <summary>
-        /// Stores the api Base URL.
-        /// </summary>
-        string _apiBaseUrl = String.Empty;
 
         /// <summary>
         /// Executes a GET request and deserializes the result into the <typeparamref name="TResult"/> type.

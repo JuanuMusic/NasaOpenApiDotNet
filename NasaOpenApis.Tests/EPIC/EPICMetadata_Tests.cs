@@ -26,7 +26,7 @@ namespace NasaOpenApis.Tests.EPIC
             // Get the first element
             EpicMetadata firstElement = result.First();
             // Get the image url
-            Uri imageUrl = firstElement.GetImageUrl(api, query, Common.ImageType.PNG);
+            Uri imageUrl = firstElement.GetImageUrl(api, query, ImageType.PNG);
 
             // Check if the URL exists.
             HttpClient client = new HttpClient();
@@ -50,7 +50,7 @@ namespace NasaOpenApis.Tests.EPIC
             // Get the first element
             EpicMetadata firstElement = result.First();
             // Get the image url
-            Uri imageUrl = firstElement.GetImageUrl(api, query, Common.ImageType.JPG);
+            Uri imageUrl = firstElement.GetImageUrl(api, query, ImageType.JPG);
 
             // Check if the URL exists.
             HttpClient client = new HttpClient();
@@ -74,7 +74,7 @@ namespace NasaOpenApis.Tests.EPIC
             // Get the first element
             EpicMetadata firstElement = result.First();
             // Get the image url
-            Uri imageUrl = firstElement.GetImageUrl(api, query, Common.ImageType.Thumbnail);
+            Uri imageUrl = firstElement.GetImageUrl(api, query, ImageType.Thumbnail);
 
             // Check if the URL exists.
             HttpClient client = new HttpClient();

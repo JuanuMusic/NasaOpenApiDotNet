@@ -10,7 +10,7 @@ namespace NasaOpenApis.EPIC.Models
         public string caption { get; set; }
         public string image { get; set; }
         public string version { get; set; }
-        public CentroidCoordinates centroid_coordinates { get; set; }
+        public Coordinates centroid_coordinates { get; set; }
         public Vector3 dscovr_j2000_position { get; set; }
         public Vector3 lunar_j2000_position { get; set; }
         public Vector3 sun_j2000_position { get; set; }
