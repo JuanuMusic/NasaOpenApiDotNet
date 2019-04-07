@@ -1,3 +1,5 @@
+[![NuGet Badge](https://buildstats.info/nuget/nunit)](https://www.nuget.org/packages/NasaOpenApis/)
+
 # NasaOpenApiDotNet
 An Open Source .NET wrapper to easily consume the Nasa Open Apis.
 
