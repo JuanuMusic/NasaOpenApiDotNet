@@ -1,5 +1,2 @@
 language: csharp
 solution: NasaOpenApis.sln
-script:
-  - dotnet restore
-  - dotnet test
