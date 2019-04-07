@@ -1,6 +1,6 @@
-[![NuGet Badge](https://buildstats.info/nuget/nunit)](https://www.nuget.org/packages/NasaOpenApis/)
-
 # NasaOpenApiDotNet
+[![Build Status](https://travis-ci.org/JuanuMusic/NasaOpenApiDotNet.svg?branch=master)](https://travis-ci.org/JuanuMusic/NasaOpenApiDotNet) [![NuGet Badge](https://buildstats.info/nuget/nunit)](https://www.nuget.org/packages/NasaOpenApis/)
+
 An Open Source .NET wrapper to easily consume the Nasa Open Apis.
 
 ## Implemented APIS:
